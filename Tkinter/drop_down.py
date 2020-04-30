@@ -12,6 +12,9 @@ def save_function():
 def print_undo():
     print("You cannot undo your sins, George.")
 
+def simple_test():
+    print("You've run the command.")
+
 root = Tk()
 
 drop_menu = Menu(root)
@@ -30,5 +33,17 @@ sub_menu_2 = Menu(drop_menu)
 
 drop_menu.add_cascade(label="Edit", menu=sub_menu_2)
 sub_menu_2.add_command(label="Undo", command=print_undo)
+
+toolbar = Frame(root, bg="pink")
+insert_button = Button(toolbar, text="Insert File", command=simple_test)
+insert_button.pack(side=LEFT, padx=2, pady=3)
+
+print_button = Button(toolbar, text="print", command=simple_test)
+print_button.pack(side=LEFT, padx=2, pady=3)
+
+toolbar.pack(side=TOP, fill=X)
+
+status_bar = Label(root, text="Status Bar", bd=1, relief=SUNKEN, anchor=W)
+status_bar.pack(side=BOTTOM, padx=2, fill=X)
 
 root.mainloop()
