@@ -13,9 +13,42 @@ def insert_data(name, age, address):
     conn.commit()
     conn.close()
 
+def search_tables_by_name(name):
+    conn = psycopg2.connect(dbname='postgres', user='postgres', password='test123', port='5432')
+    cursor = conn.cursor()
+
+    query = '''SELECT * FROM STUDENT WHERE name=%s;'''
+    cursor.execute(query, (name,))
+    row = cursor.fetchone()
+
+    display_search(row)
+    conn.commit()
+    conn.close()
+
+def display_search(row):
+    listbox = Listbox(frame, width=20, height=1)
+    listbox.grid(row=9, column=1)
+    listbox.insert(END, row)
+
+def display_all():
+    conn = psycopg2.connect(dbname='postgres', user='postgres', password='test123', port='5432')
+    cursor = conn.cursor()
+
+    query = '''SELECT * FROM STUDENT;'''
+    cursor.execute(query)
+    row = cursor.fetchall()
+
+    listbox = Listbox(frame, width=20, height=10)
+    listbox.grid(row=10, column=1)
+    for x in row:
+        listbox.insert(END, x)
+
+    conn.commit()
+    conn.close()
+
 root = Tk()
 
-canvas = Canvas(root, width=300, height=480)
+canvas = Canvas(root, width=480, height=500)
 canvas.pack()
 
 frame = Frame()
@@ -41,5 +74,20 @@ entry_address.grid(row=3, column=1)
 
 submit_button = Button(frame, text="Add", command= lambda: insert_data(entry_name.get(), entry_age.get(), entry_address.get()))
 submit_button.grid(row=4, column=1)
+
+search_head = Label(frame, text="Search Data")
+search_head.grid(row=5, column=1)
+
+search_label = Label(frame, text="Search by Name")
+search_label.grid(row=6, column=0)
+
+name_search = Entry(frame)
+name_search.grid(row=6, column=1)
+
+go_search = Button(frame, text="Search", command= lambda: search_tables_by_name(name_search.get()))
+go_search.grid(row=6, column=2)
+
+display_all_items = Button(frame, text="Display all items", command= lambda: display_all())
+display_all_items.grid(row=7, column=1)
 
 root.mainloop()
