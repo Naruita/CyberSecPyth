@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Book
 from django.template import loader
-# Create your views here.
 
 
 def index(request):
@@ -11,8 +10,7 @@ def index(request):
     context = {
         'all_books' : all_books
     }
-
-    return HttpResponse(template.render(context, request))
+    return render(request, 'books/index.html', context)
 
 
 def detail(request, book_id):
