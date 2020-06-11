@@ -1,5 +1,5 @@
 <ul>
     {% for book in all_books %}
-        <li><a href="/books/{{book.id}}/">{{book.name}}</a></li>
+        <li><a href="{% url 'detail' book.id %}">{{book.name}}</a></li>
     {% endfor %}
 </ul>
