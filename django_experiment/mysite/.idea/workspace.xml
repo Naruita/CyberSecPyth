@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="230f3a6b-9b41-46cf-8fb3-6f74137ed7c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/books/static/books/assets/unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/books/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/static/books/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/books/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590248957568</updated>
       <workItem from="1591537563536" duration="86000" />
-      <workItem from="1591863519807" duration="7453000" />
+      <workItem from="1591863519807" duration="7534000" />
     </task>
     <task id="LOCAL-00001" summary="Added in template for HTML">
       <created>1591866861991</created>
@@ -112,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591870476594</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Bootstrap integration">
+      <created>1591872529242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591872529242</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,17 +151,18 @@
     <MESSAGE value="Added in template for HTML" />
     <MESSAGE value="Changed up to use render instead of HTTPResponse" />
     <MESSAGE value="Changed hardcoded url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed hardcoded url" />
+    <MESSAGE value="Bootstrap integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bootstrap integration" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1591870475324">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1591872527471">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591870475324" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1591870478684">
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591872527471" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1591872529994">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1591870478684" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1591872529994" />
     <state x="431" y="181" key="search.everywhere.popup" timestamp="1591870795693">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
