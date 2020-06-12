@@ -1,5 +1,6 @@
 from django.views import generic
 from .models import Book
+from django.views.generic.edit import CreateView
 
 
 class IndexView(generic.ListView):
@@ -7,6 +8,11 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         return Book.objects.all()
+
+
+class BookCreate(CreateView):
+    model = Book
+    fields = ['name', 'author', 'price', 'type', 'book_image']
 
 
 class DetailView(generic.DetailView):
