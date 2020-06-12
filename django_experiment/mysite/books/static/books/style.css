@@ -1,3 +1,11 @@
 body {
     background: white url("assets/unsplash.jpg");
 }
+
+.jumbotron {
+    background: white url("assets/purple_chair.jpg");
+}
+
+.jumbotron-special {
+    background: white url("assets/pink_purple_bg.png");
+}
