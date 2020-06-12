@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="230f3a6b-9b41-46cf-8fb3-6f74137ed7c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/books/templates/books/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/books/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +89,7 @@
       <updated>1590248957568</updated>
       <workItem from="1591537563536" duration="86000" />
       <workItem from="1591863519807" duration="9825000" />
-      <workItem from="1591966773222" duration="1807000" />
+      <workItem from="1591966773222" duration="2093000" />
     </task>
     <task id="LOCAL-00001" summary="Added in template for HTML">
       <created>1591866861991</created>
@@ -136,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591875318063</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated navbar to show up everywhere.">
+      <created>1591968748601</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591968748601</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,21 +178,22 @@
     <MESSAGE value="Changed hardcoded url" />
     <MESSAGE value="Bootstrap integration" />
     <MESSAGE value="Adding in the navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding in the navbar" />
+    <MESSAGE value="Updated navbar to show up everywhere." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated navbar to show up everywhere." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1591875316671">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1591968746969">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591875316671" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591968746969" />
     <state x="277" y="77" key="SettingsEditor" timestamp="1591967921114">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1591967921114" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1591875319486">
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1591968750136">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1591875319486" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1591968750136" />
     <state x="431" y="181" key="search.everywhere.popup" timestamp="1591870795693">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

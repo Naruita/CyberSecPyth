@@ -1,5 +1,4 @@
 {% extends 'books/base.html' %}
-{% load static %}
 {% block body %}
 <html lang="html">
     <head>
@@ -7,7 +6,7 @@
     </head>
     <body>
         <ul>
-            {% for book in all_books %}
+            {% for book in object_list %}
             <li><a href="{% url 'books:detail' book.id %}">{{book.name}}</a></li>
             {% endfor %}
         </ul>
