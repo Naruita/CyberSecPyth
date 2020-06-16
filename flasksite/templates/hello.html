@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello</title>
+	<script type="text/javascript" src="{{ url_for('static', filename='hello.js') }}"></script>
 </head>
 <body>
-    <h1>Hey.</h1>
-    <h4>We were waiting for you, {{ name }}.</h4>
+	<input type="button" onclick="sayHi()" value="Say Hi">
 </body>
 </html>
