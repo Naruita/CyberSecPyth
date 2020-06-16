@@ -2,17 +2,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello():
-	return 'hello world'
-
-@app.route('/new')
-def new():
-	return 'new page'
-
-@app.route('/demo')
-def demo():
-	return 'this is the demo'
+@app.route('/profile/<float:id>')
+def profile(id):
+	return 'This profile belongs to %d' %id
 
 if __name__ == '__main__':
 	app.run()
