@@ -16,7 +16,7 @@ def insert_data():
     cursor = conn.cursor()
 
     name = input("Enter the name : ")
-    age = int(input("Enter the age : "))
+    age = eval(input("Enter the age : "))
     address = input("Enter the address : ")
     query = '''INSERT INTO student (NAME, AGE, ADDRESS) VALUES (%s, %s, %s);'''
     cursor.execute(query, (name, age, address))

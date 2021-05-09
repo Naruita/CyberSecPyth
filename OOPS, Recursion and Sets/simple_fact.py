@@ -3,4 +3,4 @@ def fact(number):
         return number
     return number*fact(number-1)
 
-print(fact(int(input("Enter the number : "))))
+print(fact(eval(input("Enter the number : "))))

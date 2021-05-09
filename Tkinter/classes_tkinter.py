@@ -19,6 +19,7 @@ class my_buttons:
         webb.open("https://youtu.be/8CdcCD5V-d8")
 
 
-root = Tk()
-b = my_buttons(root)
-root.mainloop()
+if __name__ == "__main__":
+    root = Tk()
+    b = my_buttons(root)
+    root.mainloop()
